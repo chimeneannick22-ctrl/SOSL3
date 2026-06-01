@@ -16,9 +16,9 @@ import GalleryVideos from "../views/GalleryVideos.vue"
 import Contact from "../views/Contact.vue"
 
 const routes = [
-  { path: "/", component: Home },
-  { path: "/about", component: About },
-  { path: "/services", component: Services },
+  { path: "/", component: home },
+  { path: "/about", component: about },
+  { path: "/services", component: services },
 
   { path: "/kigali", component: Kigali },
   { path: "/south", component: South },
@@ -29,7 +29,7 @@ const routes = [
   { path: "/gallery/images", component: GalleryImages },
   { path: "/gallery/videos", component: GalleryVideos },
 
-  { path: "/contact", component: Contact },
+  { path: "/contact", component: contact },
 ]
 
 const router = createRouter({
