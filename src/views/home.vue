@@ -1,13 +1,67 @@
 <template>
-    <!--Hero section-->
-    <section class="relative h-screen bg-cover bg-center flex items-center justify-center text-white"
+  <!-- Hero Section -->
+  <section
+    class="relative h-screen flex items-center justify-center bg-cover bg-center overflow-hidden"
     style="background-image: url('/src/assets/gori.png');"
-    >
-    <div class="bg-black/40 bg-opacity-50 absolute inset-0">
+  >
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black/55"></div>
+
+    <!-- Gradient -->
+    <div
+      class="absolute inset-0 bg-gradient-to-b from-black/40 via-green-900/30 to-black/70"
+    ></div>
+
+    <!-- Content -->
+    <div class="relative z-10 text-center px-6 max-w-4xl animate-fadeIn">
+      
+      <!-- Top Label -->
+      <p
+        class="uppercase tracking-[6px] text-green-300 text-sm md:text-base mb-4 font-semibold"
+      >
+        Explore Africa's Beauty
+      </p>
+
+      <!-- Main Title -->
+      <h1
+        class="text-5xl md:text-7xl font-extrabold text-white leading-tight drop-shadow-2xl"
+      >
+        Welcome to
+        <span class="text-green-400">Rwanda</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p
+        class="mt-6 text-lg md:text-2xl text-gray-200 font-light"
+      >
+        Discover the breathtaking landscapes,
+        vibrant culture, and unforgettable adventures in the
+        <span class="text-yellow-300 font-medium">
+          Land of a Thousand Hills
+        </span>
+      </p>
+
+      <!-- Buttons -->
+      <div
+        class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-5"
+      >
+        <button
+          class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-2xl transition duration-300 hover:scale-105"
+        >
+          Explore Now
+        </button>
+
+        <button
+          class="border border-white/40 bg-white/10 backdrop-blur-md hover:bg-white hover:text-black text-white px-8 py-4 rounded-full text-lg font-semibold transition duration-300"
+        >
+          Learn More
+        </button>
+      </div>
     </div>
-    <div class="relative text-center px-4">
-        <h1 class="text-5xl font-bold mb-4">WELCOME TO RWANDA </h1>
-        <P class="text-xl mb-8 text-green-300">LAND OF A THOUSAND HILLS</P>
-    </div>
-    </section>
+
+    <!-- Bottom Shadow -->
+    <div
+      class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black to-transparent"
+    ></div>
+  </section>
 </template>
