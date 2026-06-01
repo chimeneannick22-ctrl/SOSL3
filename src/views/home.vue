@@ -1,3 +1,7 @@
+<script setup>
+import { t } from '../i18n.js'
+</script>
+
 <template>
   <!-- Hero Section -->
   <section
@@ -19,14 +23,14 @@
       <p
         class="uppercase tracking-[6px] text-green-300 text-sm md:text-base mb-4 font-semibold"
       >
-        Explore Africa's Beauty
+        {{ t('simpleHome.welcome') }}
       </p>
 
       <!-- Main Title -->
       <h1
         class="text-5xl md:text-7xl font-extrabold text-white leading-tight drop-shadow-2xl"
       >
-        Welcome to
+        {{ t('simpleHome.title') }}
         <span class="text-green-400">Rwanda</span>
       </h1>
 
@@ -34,10 +38,9 @@
       <p
         class="mt-6 text-lg md:text-2xl text-gray-200 font-light"
       >
-        Discover the breathtaking landscapes,
-        vibrant culture, and unforgettable adventures in the
+        {{ t('simpleHome.subtitle') }}
         <span class="text-yellow-300 font-medium">
-          Land of a Thousand Hills
+          {{ t('simpleHome.description') }}
         </span>
       </p>
 
@@ -48,13 +51,13 @@
         <button
           class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold shadow-2xl transition duration-300 hover:scale-105"
         >
-          Explore Now
+          {{ t('simpleHome.exploreButton') }}
         </button>
 
         <button
           class="border border-white/40 bg-white/10 backdrop-blur-md hover:bg-white hover:text-black text-white px-8 py-4 rounded-full text-lg font-semibold transition duration-300"
         >
-          Learn More
+          {{ t('simpleHome.learnMore') }}
         </button>
       </div>
     </div>

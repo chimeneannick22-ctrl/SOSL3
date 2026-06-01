@@ -1,5 +1,6 @@
 <script setup>
 import Gallery from '../components/Gallery.vue'
+import { t } from '../i18n.js'
 
 const galleryItems = [
   {
@@ -45,13 +46,11 @@ const galleryItems = [
   <section class="min-h-screen bg-gray-900 text-white py-10 px-6">
 
     <h1 class="text-4xl font-bold text-center text-green-400 mb-4">
-      WELCOME TO NORTHERN PROVINCE
+      {{ t('destination.north.title') }}
     </h1>
 
     <p class="text-center text-gray-300 max-w-3xl mx-auto mb-10">
-      Explore the breathtaking beauty of Rwanda's Northern Province, home to
-      majestic volcanoes, mountain gorillas, scenic lakes, caves, and rich
-      cultural experiences.
+      {{ t('destination.north.description') }}
     </p>
 
     <div class="max-w-7xl mx-auto">

@@ -1,5 +1,6 @@
 <script setup>
 import Gallery from '../components/Gallery.vue'
+import { t } from '../i18n.js'
 
 const galleryItems = [
   {
@@ -45,13 +46,11 @@ const galleryItems = [
   <section class="min-h-screen bg-gray-900 text-white py-10 px-6">
 
     <h1 class="text-4xl font-bold text-center text-green-400 mb-4">
-      WELCOME TO KIGALI CITY
+      {{ t('destination.kigali.title') }}
     </h1>
 
     <p class="text-center text-gray-300 max-w-3xl mx-auto mb-10">
-      Discover Kigali, the capital city of Rwanda. Known for its cleanliness,
-      beautiful hills, vibrant culture, historical sites, and modern attractions,
-      Kigali offers unforgettable experiences for visitors. 
+      {{ t('destination.kigali.description') }}
     </p>
 
     <div class="max-w-7xl mx-auto">

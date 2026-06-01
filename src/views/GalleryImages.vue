@@ -108,12 +108,11 @@ const galleryItems = [
   <section class="min-h-screen bg-gray-900 text-white py-10 px-6">
     
     <h1 class="text-4xl font-bold text-center text-green-400 mb-4">
-      GALLERY - IMAGES
+      {{ t('gallery.imagesTitle') }}
     </h1>
 
     <p class="text-center text-gray-300 max-w-3xl mx-auto mb-12">
-      Explore the most beautiful images from Rwanda. Stunning landscapes, wildlife,
-      cultural sites, and natural wonders from all five provinces. Click any image to view in fullscreen.
+      {{ t('gallery.imagesDescription') }}
     </p>
 
     <div class="max-w-7xl mx-auto">

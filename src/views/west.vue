@@ -1,5 +1,6 @@
 <script setup>
 import Gallery from '../components/Gallery.vue'
+import { t } from '../i18n.js'
 
 const galleryItems = [
   {
@@ -57,14 +58,11 @@ const galleryItems = [
   <section class="min-h-screen bg-gray-900 text-white py-10 px-6">
 
     <h1 class="text-4xl font-bold text-center text-green-400 mb-4">
-      WELCOME TO WESTERN PROVINCE
+      {{ t('destination.west.title') }}
     </h1>
 
     <p class="text-center text-gray-300 max-w-3xl mx-auto mb-10">
-      Discover the beauty of Rwanda's Western Province, a region known for its
-      stunning Lake Kivu shoreline, lush forests, mountains, islands, and rich
-      cultural heritage. Whether you love adventure, relaxation, or nature,
-      Western Province offers unforgettable experiences.
+      {{ t('destination.west.description') }}
     </p>
 
     <div class="max-w-7xl mx-auto">

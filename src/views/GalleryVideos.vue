@@ -45,12 +45,11 @@ const galleryItems = [
   <section class="min-h-screen bg-gray-900 text-white py-10 px-6">
     
     <h1 class="text-4xl font-bold text-center text-green-400 mb-4">
-      GALLERY - VIDEOS
+      {{ t('gallery.videosTitle') }}
     </h1>
 
     <p class="text-center text-gray-300 max-w-3xl mx-auto mb-12">
-      Watch amazing video content from Rwanda. From wildlife documentaries to cultural experiences,
-      cultural tours, and adventure activities. Click any video to play in fullscreen with controls.
+      {{ t('gallery.videosDescription') }}
     </p>
 
     <div class="max-w-7xl mx-auto">
