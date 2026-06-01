@@ -16,9 +16,9 @@ import GalleryVideos from "../views/GalleryVideos.vue"
 import Contact from "../views/Contact.vue"
 
 const routes = [
-  { path: "/", component: home },
-  { path: "/about", component: about },
-  { path: "/services", component: services },
+  { path: "/", component: Home },
+  { path: "/about", component: About },
+  { path: "/services", component: Services },
 
   { path: "/kigali", component: Kigali },
   { path: "/south", component: South },
@@ -29,9 +29,8 @@ const routes = [
   { path: "/gallery/images", component: GalleryImages },
   { path: "/gallery/videos", component: GalleryVideos },
 
-  { path: "/contact", component: contact },
+  { path: "/contact", component: Contact },
 ]
-
 const router = createRouter({
   history: createWebHistory(),
   routes,
