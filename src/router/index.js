@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router"
 
 import Home from "../views/home.vue"
-import About from "../views/about.vue"
+import About from "../views/About.vue"
 import Services from "../views/Services.vue"
 
 import Kigali from "../views/kigali.vue"
