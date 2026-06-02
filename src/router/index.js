@@ -13,7 +13,7 @@ import East from "../views/east.vue"
 import GalleryImages from "../views/GalleryImages.vue"
 import GalleryVideos from "../views/GalleryVideos.vue"
 
-import Contact from "../views/contact.vue"
+import Contact from "../views/Contact.vue"
 
 const routes = [
   { path: "/", component: Home },
