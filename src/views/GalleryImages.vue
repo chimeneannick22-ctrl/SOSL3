@@ -85,7 +85,7 @@ const galleryItems = [
   // Kigali
   {
     type: 'image',
-    src: 'https://images.pexels.com/photos/208701/pexels-photo-208701.jpeg',
+    src: 'assets/boy.png',
     title: 'Kigali Genocide Memorial',
     description: 'Historical and cultural significance'
   },
