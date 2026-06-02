@@ -24,7 +24,7 @@ const galleryItems = [
     type: 'video',
     src: 'https://www.w3schools.com/html/movie.mp4',
     title: 'Cultural Heritage Tour',
-    description: 'Explore Rwanda\'s rich cultural traditions and local communities'
+    description: "Explore Rwanda's rich cultural traditions and local communities"
   },
   {
     type: 'video',
@@ -43,17 +43,19 @@ const galleryItems = [
 
 <template>
   <section class="min-h-screen bg-gray-900 text-white py-10 px-6">
-    
+
     <h1 class="text-4xl font-bold text-center text-green-400 mb-4">
-      {{ t('gallery.videosTitle') }}
+      Rwanda Tourism Videos
     </h1>
 
     <p class="text-center text-gray-300 max-w-3xl mx-auto mb-12">
-      {{ t('gallery.videosDescription') }}
+      Watch inspiring videos showcasing Rwanda's wildlife, culture,
+      landscapes, lakes, forests, and tourism experiences.
     </p>
 
     <div class="max-w-7xl mx-auto">
       <Gallery :items="galleryItems" />
     </div>
+
   </section>
 </template>

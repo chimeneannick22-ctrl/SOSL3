@@ -1,53 +1,54 @@
 <script setup>
 import Gallery from '../components/Gallery.vue'
+import boyImage from '../assets/boy.png'
 
 const galleryItems = [
   // Northern Province
   {
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee',
+    src: 'https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=1200',
     title: 'Volcanoes National Park',
     description: 'Mountain gorillas and volcanic scenery in Northern Province'
   },
   {
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1511497584788-876760111969',
+    src: 'https://images.unsplash.com/photo-1511497584788-876760111969?w=1200',
     title: 'Musanze Caves',
     description: 'Ancient lava caves with spectacular rock formations'
   },
   {
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb',
+    src: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1200',
     title: 'Twin Lakes',
     description: 'Stunning views of Burera and Ruhondo lakes'
   },
-  
+
   // Western Province
   {
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21',
+    src: 'https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=1200',
     title: 'Lake Kivu',
     description: 'Beautiful lakeside with beaches and boat cruises'
   },
   {
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1448375240586-882707db888b',
+    src: 'https://images.unsplash.com/photo-1448375240586-882707db888b?w=1200',
     title: 'Nyungwe National Park',
     description: 'Ancient rainforest with wildlife and nature trails'
   },
   {
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07',
+    src: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=1200',
     title: 'Canopy Walkway',
     description: 'Walk high above the forest floor with spectacular views'
   },
-  
+
   // Southern Province
   {
     type: 'image',
     src: 'https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg',
     title: "King's Palace Museum",
-    description: 'Rwanda\'s royal history and traditions'
+    description: "Rwanda's royal history and traditions"
   },
   {
     type: 'image',
@@ -57,11 +58,11 @@ const galleryItems = [
   },
   {
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e',
+    src: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1200',
     title: 'Huye Mountains',
     description: 'Beautiful rolling hills and countryside views'
   },
-  
+
   // Eastern Province
   {
     type: 'image',
@@ -71,21 +72,21 @@ const galleryItems = [
   },
   {
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e',
+    src: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200',
     title: 'Lake Muhazi',
     description: 'Beautiful freshwater lake for relaxation and water activities'
   },
   {
     type: 'image',
-    src: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952',
+    src: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=1200',
     title: 'Cultural Experiences',
     description: 'Traditional dances and local culture'
   },
-  
+
   // Kigali
   {
     type: 'image',
-    src: 'assets/boy.png',
+    src: boyImage,
     title: 'Kigali Genocide Memorial',
     description: 'Historical and cultural significance'
   },
@@ -106,17 +107,19 @@ const galleryItems = [
 
 <template>
   <section class="min-h-screen bg-gray-900 text-white py-10 px-6">
-    
+
     <h1 class="text-4xl font-bold text-center text-green-400 mb-4">
-      {{ t('gallery.imagesTitle') }}
+      Rwanda Tourism Gallery
     </h1>
 
     <p class="text-center text-gray-300 max-w-3xl mx-auto mb-12">
-      {{ t('gallery.imagesDescription') }}
+      Explore Rwanda's beautiful national parks, lakes, cultural heritage sites,
+      museums, wildlife, and breathtaking landscapes.
     </p>
 
     <div class="max-w-7xl mx-auto">
       <Gallery :items="galleryItems" />
     </div>
+
   </section>
 </template>
