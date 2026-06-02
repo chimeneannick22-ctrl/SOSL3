@@ -1,3 +1,7 @@
+<script setup>
+import { t } from '../i18n.js'
+</script>
+
 <template>
     <!-- Hero Section -->
     <section
@@ -11,17 +15,15 @@
         <div class="relative z-10 text-center px-6 max-w-6xl">
 
             <h1 class="text-5xl md:text-7xl font-bold mb-4">
-                TOURISM SERVICES
+                {{ t('services.title') }}
             </h1>
 
             <p class="text-2xl text-green-300 font-semibold mb-4">
-                Explore Rwanda's Natural Beauty
+                {{ t('services.subtitle') }}
             </p>
 
             <p class="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto mb-10 leading-relaxed">
-                Discover breathtaking landscapes, mountain gorillas, wildlife safaris,
-                cultural heritage sites, hiking adventures, and unforgettable travel
-                experiences across the Land of a Thousand Hills.
+                {{ t('services.description') }}
             </p>
 
             <!-- Service Cards -->
@@ -29,31 +31,28 @@
 
                 <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:scale-105 transition">
                     <h3 class="text-2xl font-bold text-green-300 mb-3">
-                        Wildlife Tours
+                        {{ t('services.wildlifeTours.title') }}
                     </h3>
                     <p class="text-gray-200">
-                        Guided gorilla trekking, safari adventures, bird watching,
-                        and visits to Rwanda's national parks.
+                        {{ t('services.wildlifeTours.description') }}
                     </p>
                 </div>
 
                 <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:scale-105 transition">
                     <h3 class="text-2xl font-bold text-green-300 mb-3">
-                        Cultural Experiences
+                        {{ t('services.culturalExperiences.title') }}
                     </h3>
                     <p class="text-gray-200">
-                        Traditional dance performances, local community visits,
-                        museums, and historical site tours.
+                        {{ t('services.culturalExperiences.description') }}
                     </p>
                 </div>
 
                 <div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/20 hover:scale-105 transition">
                     <h3 class="text-2xl font-bold text-green-300 mb-3">
-                        Adventure Activities
+                        {{ t('services.adventureActivities.title') }}
                     </h3>
                     <p class="text-gray-200">
-                        Mountain hiking, cycling trails, boat trips,
-                        camping, and nature exploration.
+                        {{ t('services.adventureActivities.description') }}
                     </p>
                 </div>
 
@@ -65,46 +64,46 @@
                 <!-- Working Hours -->
                 <div class="bg-green-700/30 backdrop-blur-md p-6 rounded-2xl">
                     <h3 class="text-2xl font-bold mb-3">
-                        Opening Hours
+                        {{ t('services.openingHoursTitle') }}
                     </h3>
 
-                    <p>Monday - Friday</p>
+                    <p>{{ t('services.weekdays') }}</p>
                     <p class="font-semibold text-green-300">
-                        08:00 AM - 06:00 PM
+                        {{ t('services.weekdayHours') }}
                     </p>
 
-                    <p class="mt-3">Saturday</p>
+                    <p class="mt-3">{{ t('services.saturday') }}</p>
                     <p class="font-semibold text-green-300">
-                        09:00 AM - 04:00 PM
+                        {{ t('services.saturdayHours') }}
                     </p>
                 </div>
 
                 <!-- Closing Hours -->
                 <div class="bg-green-700/30 backdrop-blur-md p-6 rounded-2xl">
                     <h3 class="text-2xl font-bold mb-3">
-                        Closing Schedule
+                        {{ t('services.closingTitle') }}
                     </h3>
 
-                    <p>Sunday</p>
+                    <p>{{ t('services.sunday') }}</p>
                     <p class="font-semibold text-green-300">
-                        Closed
+                        {{ t('services.closed') }}
                     </p>
 
                     <p class="mt-3">
-                        Public holidays may have adjusted operating hours.
+                        {{ t('services.holidayNote') }}
                     </p>
                 </div>
 
                 <!-- Contact Info -->
                 <div class="bg-green-700/30 backdrop-blur-md p-6 rounded-2xl">
                     <h3 class="text-2xl font-bold mb-3">
-                        Contact Us
+                        {{ t('services.contactUsTitle') }}
                     </h3>
 
-                    <p>📍 Kigali, Rwanda</p>
-                    <p>📞 +250 788 123 456</p>
-                    <p>✉ info@rwandatourism.rw</p>
-                    <p>🌐 www.rwandatourism.rw</p>
+                    <p>{{ t('services.locationText') }}</p>
+                    <p>{{ t('services.phoneText') }}</p>
+                    <p>{{ t('services.emailText') }}</p>
+                    <p>{{ t('services.contactWebsite') }}</p>
                 </div>
 
             </div>
@@ -114,13 +113,13 @@
                 <button
                     class="bg-green-600 hover:bg-green-700 px-8 py-3 rounded-xl font-semibold shadow-lg transition duration-300"
                 >
-                    Book Your Tour
+                    {{ t('services.bookTour') }}
                 </button>
 
                 <button
                     class="border-2 border-white hover:bg-white hover:text-black px-8 py-3 rounded-xl font-semibold transition duration-300"
                 >
-                    Explore Destinations
+                    {{ t('services.exploreDestinations') }}
                 </button>
             </div>
 

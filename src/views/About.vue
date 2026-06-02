@@ -1,3 +1,7 @@
+<script setup>
+import { t } from '../i18n.js'
+</script>
+
 <template>
   <!-- Tourism Section -->
   <section
@@ -13,17 +17,17 @@
       <!-- Title -->
       <div class="text-center mb-16">
         <h1 class="text-5xl font-bold text-white mb-4">
-          Discover Rwanda
+          {{ t('about.title') }}
         </h1>
 
         <p class="text-xl text-green-300">
-          Explore Amazing Destinations & Unforgettable Experiences
+          {{ t('about.subtitle') }}
         </p>
       </div>
 
       <!-- Popular Destinations -->
       <h2 class="text-4xl font-bold text-center text-white mb-10">
-        Popular Destinations
+        {{ t('about.popularDestinations') }}
       </h2>
 
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -37,10 +41,10 @@
           />
           <div class="p-5">
             <h3 class="text-xl font-bold text-green-300 mb-2">
-              Volcanoes National Park
+              {{ t('about.volcanoes') }}
             </h3>
             <p class="text-gray-200">
-              Home of mountain gorillas and stunning volcanic scenery.
+              {{ t('about.volcanoesDesc') }}
             </p>
           </div>
         </div>
@@ -54,10 +58,10 @@
           />
           <div class="p-5">
             <h3 class="text-xl font-bold text-green-300 mb-2">
-              Lake Kivu
+              {{ t('about.lakeKivu') }}
             </h3>
             <p class="text-gray-200">
-              Beautiful lakeside views, beaches, and relaxing boat rides.
+              {{ t('about.lakeKivuDesc') }}
             </p>
           </div>
         </div>
@@ -71,10 +75,10 @@
           />
           <div class="p-5">
             <h3 class="text-xl font-bold text-green-300 mb-2">
-              Nyungwe Forest
+              {{ t('about.nyungweForest') }}
             </h3>
             <p class="text-gray-200">
-              Ancient rainforest with chimpanzees and canopy walks.
+              {{ t('about.nyungweForestDesc') }}
             </p>
           </div>
         </div>
@@ -88,10 +92,10 @@
           />
           <div class="p-5">
             <h3 class="text-xl font-bold text-green-300 mb-2">
-              Akagera National Park
+              {{ t('about.akageraPark') }}
             </h3>
             <p class="text-gray-200">
-              Safari experience with lions, elephants, and giraffes.
+              {{ t('about.akageraParkDesc') }}
             </p>
           </div>
         </div>
@@ -100,7 +104,7 @@
 
       <!-- Tourism Experts -->
       <h2 class="text-4xl font-bold text-center text-white mt-24 mb-10">
-        Meet Our Tourism Experts
+        {{ t('about.expertsTitle') }}
       </h2>
 
       <div class="grid md:grid-cols-3 gap-8">
@@ -114,10 +118,10 @@
           />
           <div class="p-6">
             <h3 class="text-2xl font-bold text-green-300 mb-3">
-              Professional Tour Guides
+              {{ t('about.expertGuideTitle') }}
             </h3>
             <p class="text-gray-200">
-              Friendly experts ready to guide you across Rwanda safely.
+              {{ t('about.expertGuideDesc') }}
             </p>
           </div>
         </div>
@@ -131,10 +135,10 @@
           />
           <div class="p-6">
             <h3 class="text-2xl font-bold text-green-300 mb-3">
-              Travel Planners
+              {{ t('about.expertPlannerTitle') }}
             </h3>
             <p class="text-gray-200">
-              We design your perfect travel itinerary from start to finish.
+              {{ t('about.expertPlannerDesc') }}
             </p>
           </div>
         </div>
@@ -148,10 +152,10 @@
           />
           <div class="p-6">
             <h3 class="text-2xl font-bold text-green-300 mb-3">
-              Customer Support Team
+              {{ t('about.expertSupportTitle') }}
             </h3>
             <p class="text-gray-200">
-              Available 24/7 to assist you before and during your trip.
+              {{ t('about.expertSupportDesc') }}
             </p>
           </div>
         </div>
@@ -162,22 +166,22 @@
       <div class="grid md:grid-cols-3 gap-8 mt-24">
 
         <div class="bg-green-700/30 backdrop-blur-lg p-6 rounded-3xl border border-white/20">
-          <h3 class="text-2xl font-bold text-white mb-3">Working Hours</h3>
-          <p class="text-gray-200">Monday - Friday</p>
-          <p class="text-green-300 font-semibold">08:00 AM - 06:00 PM</p>
+          <h3 class="text-2xl font-bold text-white mb-3">{{ t('about.workingHoursTitle') }}</h3>
+          <p class="text-gray-200">{{ t('about.workingDays') }}</p>
+          <p class="text-green-300 font-semibold">{{ t('about.workingHours') }}</p>
         </div>
 
         <div class="bg-green-700/30 backdrop-blur-lg p-6 rounded-3xl border border-white/20">
-          <h3 class="text-2xl font-bold text-white mb-3">Closing Hours</h3>
-          <p class="text-gray-200">Sunday</p>
-          <p class="text-green-300 font-semibold">Closed</p>
+          <h3 class="text-2xl font-bold text-white mb-3">{{ t('about.closingHoursTitle') }}</h3>
+          <p class="text-gray-200">{{ t('about.closingDays') }}</p>
+          <p class="text-green-300 font-semibold">{{ t('about.closingHours') }}</p>
         </div>
 
         <div class="bg-green-700/30 backdrop-blur-lg p-6 rounded-3xl border border-white/20">
-          <h3 class="text-2xl font-bold text-white mb-3">Contact Us</h3>
-          <p class="text-gray-200">📍 Kigali, Rwanda</p>
-          <p class="text-gray-200">📞 +250 792141930</p>
-          <p class="text-gray-200">✉ info@rwandatourism.rw</p>
+          <h3 class="text-2xl font-bold text-white mb-3">{{ t('about.supportTitle') }}</h3>
+          <p class="text-gray-200">{{ t('about.contactLocation') }}</p>
+          <p class="text-gray-200">{{ t('about.contactPhone') }}</p>
+          <p class="text-gray-200">{{ t('about.contactEmail') }}</p>
         </div>
 
       </div>
