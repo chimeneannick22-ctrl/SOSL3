@@ -1,28 +1,85 @@
 <script setup>
 import { ref } from 'vue'
+
 const Email = ref('')
-const Passwaord = ref('')
+const Password = ref('')
 </script>
+
 <template>
-    <div class="flex item-center  justify-center bg-green-100 main-h-screen">
-        <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-            <h2 class="text-2x1 font-bold text-green-800 mb-6 text-center">Login</h2>
-            <form class="flex flex-col gap-4">
-                <input v-model="Email" type="email" placeholder="Please enter user email" required
-                class="border border-gray-300 rounded px-4 py-2 focus:outline.one focus:border-green-600"/>
+  <div
+    class="min-h-screen flex items-center justify-center bg-cover bg-center px-4"
+    style="background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=1600');"
+  >
+    <div class="absolute inset-0 bg-black/50"></div>
 
-                  <input v-model="Passwaord" type="password" placeholder="Please enter password" required
-                class="border border-gray-300 rounded px-4 py-2 focus:outline.one focus:border-green-600"/>
+    <div
+      class="relative bg-white/90 backdrop-blur-md p-8 rounded-2xl shadow-2xl w-full max-w-md"
+    >
+      <h2 class="text-3xl font-bold text-green-800 text-center mb-2">
+        Welcome Back
+      </h2>
 
-                <button type="submit"
-                class="bg-green-800 text-white py02 rounded hover:bg-green-700 font-semibold">Sign in</button>
-            </form>
-            <p class="text-center text-sm mt-4 text-grey-600">
-                    Dont have account? Please create it here
+      <p class="text-center text-gray-600 mb-8">
+        Sign in to continue exploring Rwanda Tourism
+      </p>
 
-                    <!-- <RouterLink to="/register" class="text-green-700 font-semibold hover:undreline">Register</RouterLink> -->
-                </p>
+      <form class="flex flex-col gap-5">
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-2">
+            Email Address
+          </label>
 
+          <input
+            v-model="Email"
+            type="email"
+            placeholder="Enter your email"
+            required
+            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition"
+          />
         </div>
+
+        <div>
+          <label class="block text-sm font-medium text-gray-700 mb-2">
+            Password
+          </label>
+
+          <input
+            v-model="Password"
+            type="password"
+            placeholder="Enter your password"
+            required
+            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent transition"
+          />
+        </div>
+
+        <div class="flex justify-between text-sm">
+          <label class="flex items-center gap-2 text-gray-600">
+            <input type="checkbox" />
+            Remember me
+          </label>
+
+          <a href="#" class="text-green-700 hover:text-green-900">
+            Forgot Password?
+          </a>
+        </div>
+
+        <button
+          type="submit"
+          class="bg-green-700 text-white py-3 rounded-lg font-semibold hover:bg-green-800 transition duration-300 shadow-lg"
+        >
+          Sign In
+        </button>
+      </form>
+
+      <p class="text-center text-sm mt-6 text-gray-600">
+        Don't have an account?
+        <router-link
+          to="/register"
+          class="text-green-700 font-semibold hover:underline"
+        >
+          Register
+        </router-link>
+      </p>
     </div>
-    </template>
+  </div>
+</template>

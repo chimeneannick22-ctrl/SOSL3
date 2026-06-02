@@ -15,6 +15,7 @@ import GalleryVideos from "../views/GalleryVideos.vue"
 
 import Contact from "../views/Contact.vue"
 import login from "../views/login.vue"
+import register from "../views/register.vue"
 
 const routes = [
   { path: "/", component: Home },
@@ -32,6 +33,7 @@ const routes = [
 
   { path: "/contact", component: Contact },
   { path: "/login", component: login },
+  { path: "/register", component: register },
 ]
 
 const router = createRouter({

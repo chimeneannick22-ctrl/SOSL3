@@ -3,7 +3,7 @@ import { locale, setLocale, t } from '../i18n.js'
 </script>
 
 <template>
-  <nav class="bg-green-800 text-white px-8 py-4 flex items-center justify-between shadow-lg w-full">
+ <nav class="relative z-50 bg-green-800 text-white px-8 py-4 flex items-center justify-between shadow-lg w-full">
     
     <img src="../assets/gori.png" class="h-10 w-20" alt="Logo">
     
@@ -108,6 +108,11 @@ import { locale, setLocale, t } from '../i18n.js'
       <li>
         <router-link to="/login" class="hover:text-yellow-300">
           {{ t('login') }}
+        </router-link>
+      </li>
+        <li>
+        <router-link to="/register" class="hover:text-yellow-300">
+          {{ t('register') }}
         </router-link>
       </li>
 
