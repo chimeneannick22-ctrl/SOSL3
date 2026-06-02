@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router"
 
 import Home from "../views/home.vue"
-import About from "../views/About.vue"
+import About from "../views/about.vue"
 import Services from "../views/Services.vue"
 
 import Kigali from "../views/kigali.vue"
@@ -13,12 +13,12 @@ import East from "../views/east.vue"
 import GalleryImages from "../views/GalleryImages.vue"
 import GalleryVideos from "../views/GalleryVideos.vue"
 
-import Contact from "../views/Contact.vue"
+import Contact from "../views/contact.vue"
 
 const routes = [
-  { path: "/", component: home },
-  { path: "/about", component: about },
-  { path: "/services", component: services },
+  { path: "/", component: Home },
+  { path: "/about", component: About },
+  { path: "/services", component: Services },
 
   { path: "/kigali", component: Kigali },
   { path: "/south", component: South },
@@ -29,7 +29,7 @@ const routes = [
   { path: "/gallery/images", component: GalleryImages },
   { path: "/gallery/videos", component: GalleryVideos },
 
-  { path: "/contact", component: contact },
+  { path: "/contact", component: Contact },
 ]
 
 const router = createRouter({
